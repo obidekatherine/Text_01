@@ -4,8 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just For Fun!</title>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i"
+    type="text/css" media="all">
+<link rel="stylesheet" href="style-main.css" type="text/css" media="all">
+
+<script src="JS/script.js" defer></script>
+<script src="JS/libs/flexibility.js"></script>
+<script>
+    /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    !function () { function e(e, n, t) { "use strict"; var o = window.document.createElement("link"), r = n || window.document.getElementsByTagName("script")[0], a = window.document.styleSheets; return o.rel = "stylesheet", o.href = e, o.media = "only x", r.parentNode.insertBefore(o, r), o.onloadcssdefined = function (e) { for (var n, t = 0; t < a.length; t++)a[t].href && a[t].href === o.href && (n = !0); n ? e() : setTimeout(function () { o.onloadcssdefined(e) }) }, o.onloadcssdefined(function () { o.media = t || "all" }), o } function n(e, n) { e.onload = function () { e.onload = null, n && n.call(e) }, "isApplicationInstalled" in navigator && "onloadcssdefined" in e && e.onloadcssdefined(n) } !function (t) { var o = function (r, a) { "use strict"; if (r && 3 === r.length) { var i = t.navigator, c = t.document, s = t.Image, d = !(!c.createElementNS || !c.createElementNS("http://www.w3.org/2000/svg", "svg").createSVGRect || !c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") || t.opera && -1 === i.userAgent.indexOf("Chrome") || -1 !== i.userAgent.indexOf("Series40")), l = new s; l.onerror = function () { o.method = "png", o.href = r[2], e(r[2]) }, l.onload = function () { var t = 1 === l.width && 1 === l.height, i = r[t && d ? 0 : t ? 1 : 2]; t && d ? o.method = "svg" : t ? o.method = "datapng" : o.method = "png", o.href = i, n(e(i), a) }, l.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==", c.documentElement.className += " grunticon" } }; o.loadCSS = e, o.onloadCSS = n, t.grunticon = o }(this), function (e, n) { "use strict"; var t = n.document, o = "grunticon:", r = function (e) { if (t.attachEvent ? "complete" === t.readyState : "loading" !== t.readyState) e(); else { var n = !1; t.addEventListener("readystatechange", function () { n || (n = !0, e()) }, !1) } }, a = function (e) { return n.document.querySelector('link[href$="' + e + '"]') }, i = function (e) { var n, t, r, a, i, c, s = {}; if (n = e.sheet, !n) return s; t = n.cssRules ? n.cssRules : n.rules; for (var d = 0; d < t.length; d++)r = t[d].cssText, a = o + t[d].selectorText, i = r.split(");")[0].match(/US\-ASCII\,([^"']+)/), i && i[1] && (c = decodeURIComponent(i[1]), s[a] = c); return s }, c = function (e) { var n, r, a, i; a = "data-grunticon-embed"; for (var c in e) { i = c.slice(o.length); try { n = t.querySelectorAll(i) } catch (s) { continue } r = []; for (var d = 0; d < n.length; d++)null !== n[d].getAttribute(a) && r.push(n[d]); if (r.length) for (d = 0; d < r.length; d++)r[d].innerHTML = e[c], r[d].style.backgroundImage = "none", r[d].removeAttribute(a) } return r }, s = function (n) { "svg" === e.method && r(function () { c(i(a(e.href))), "function" == typeof n && n() }) }; e.embedIcons = c, e.getCSS = a, e.getIcons = i, e.ready = r, e.svgLoadedCallback = s, e.embedSVG = s }(grunticon, this) }();
+    grunticon(["gfx/icons.data.svg.css", "gfx/icons.data.png.css", "gfx/icons.fallback.css"], grunticon.svgLoadedCallback);
+</script>
+<noscript>
+    <link href="gfx/icons.fallback.css" rel="stylesheet"></noscript>
 </head>
+
 <body>
-    <p>Hellooo!</p>
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+<header class="masthead clear">
+ <div class="site-header centered">
+  <div class="site-branding">
+   <h1 class="site-title"><a href="/"><span class="icon-mmlogo" data-grunticon-embed></span>Moonwalk Manor</a>
+  </h1>
+ </div><!-- .site-title -->
+    <nav id="multi-level-nav" class="menu multi-level-nav">
+     <ul>
+      <li><a href="#">Home</a></li>
+        <li class="has-children">
+        <a href="#">Your Stay<button class="dropdown-toggle" aria-expanded="false"><span
+       class="screen-reader-text">Expand child menu</span></button></a><ul class="sub-menu">
+      <li><a href="#">Just For Fun</a></li>
+      <li><a href="#">More Photos</a></li>
+      <li><a href="#">Experience</a></li>
+     </ul>
+     </li><li><a href="#">About</a></li>
+     <li><a href="#">Contact</a></li>
+     <li><a class="reserve" href="#">Click For More!</a></li>
+     </ul>
+     </nav><!-- #multi-level-nav .multi-level-nav -->
+     </div><!-- .centered -->
+
+ </header><!-- .masthead -->
+ <div id="showcase" class="justforfun-area">
+    <div class="front-slider flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/justforfun/justforfun01-800.jpg" alt="" data-type="showcase" />
+            </li>
+            <li>
+                <img src="images/justforfun/justforfun02-800.jpg" alt="" data-type="showcase" />
+            </li>
+            <li>
+                <img src="images/justforfun/justforfun03-800.jpg" alt="" data-type="showcase" />
+            </li>
+            <li>
+                <img src="images/justforfun/justforfun04-800.jpg" alt="" data-type="showcase" />
+            </li>
+            <li>
+                <img src="images/justforfun/justforfun05-800.jpg" alt="" data-type="showcase" />
+            </li>
+        </ul>
+    </div><!-- .flexslider -->
+
+<div class="justforfun-content">
+ <div class="justforfun-text">
+<h2 class="justforfun-title">Fun Is Good?!?</h2>
+  <p class="justforfun-lede">Do anything, but let it produce joy.</p>
+</div><!-- .justforfun-text -->
+</div><!-- .justforfun-content -->
+</div><!-- #showcase .justforfun-area -->
+
+<main class="main-area">
+
+<div class="top-pitch centered">
+<h2 class="main-title">Welcome to My Space!</h2>
+<p class="teaser two-column">
+    Oh! Nothing much to see here, I am just playing around. The pictures are beautiful, what do you think? Well, i got them from <strong>The Lorem Ipsum For Photos</strong> You see, nothing much hahahahaha! So, Just play, have fun and enjoy the game.
+</p>
+</div><!-- .pitch centered -->
+<div class="cta">
+<a href="#">Click Here!</a>
+</div><!-- .cta -->
+
+<section class="main-pitch">
+<div class="three-reasons centered">
+<figure class="reason">
+    <a href="">
+        <img src="images/justforfun/justforfun02-800.jpg" alt="" data-type="reason" />
+    </a>
+    <figcaption>
+        <h3 class="content-title">No Risk, No Fun!</h3>
+        <p>Never, Ever Understimate The Importance Of Having Fun. If it is in your mind, it is worth taking the risk!
+            Class&reg;, has a panoramic view.</p>
+        <a class="content-button" href="#">Learn More<span class="screen-reader-text"> about the
+                views.</span></a>
+    </figcaption>
+</figure><!-- .reason -->
+<figure class="reason">
+    <a href="">
+        <img src="images/justforfun/justforfun03-800.jpg" alt="" data-type="reason" />
+    </a>
+    <figcaption>
+        <h3 class="content-title">Keep Inspiring Me!</h3>
+        <p>I want to refresh my mind, clear all my problems and just have fun with life. Creativity is intelligence having fun. </p>
+        <a class="content-button" href="#">Learn More<span class="screen-reader-text"> more on having fun!.</span></a>
+    </figcaption>
+</figure><!-- .reason -->
+<figure class="reason">
+    <a href="">
+        <img src="images/justforfun/jusforfun04-800.jpg" alt="" data-type="reason" />
+    </a>
+    <figcaption>
+        <h3 class="content-title">Keep it going</h3>
+        <p>Yes, you're on the moon, but that doesn't mean gravity won't do its work on your body. After a
+            long day of excitement, rest and recharge for the next day.</p>
+        <a class="content-button" href="#">Learn More<span class="screen-reader-text"> More on having fun.</span></a>
+    </figcaption>
+</figure><!-- .reason -->
+</div><!-- .three-reasons centered -->
+</section><!-- .main-pitch -->
+
+
+
 </body>
 </html>
