@@ -3,9 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Just For Fun - Welcome To My Space</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <link rel="stylesheet" href="style-main.css" type="text/css" media="all">
+
+    <script src="JS/script.js" defer></script>
+    <script src="JS/libs/flexibility.js"></script>
+    <script>
+    /*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+          !function(){function e(e,n,t){"use strict";var o=window.document.createElement("link"),r=n||window.document.getElementsByTagName("script")[0],a=window.document.styleSheets;return o.rel="stylesheet",o.href=e,o.media="only x",r.parentNode.insertBefore(o,r),o.onloadcssdefined=function(e){for(var n,t=0;t<a.length;t++)a[t].href&&a[t].href===o.href&&(n=!0);n?e():setTimeout(function(){o.onloadcssdefined(e)})},o.onloadcssdefined(function(){o.media=t||"all"}),o}function n(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(t){var o=function(r,a){"use strict";if(r&&3===r.length){var i=t.navigator,c=t.document,s=t.Image,d=!(!c.createElementNS||!c.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!c.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===i.userAgent.indexOf("Chrome")||-1!==i.userAgent.indexOf("Series40")),l=new s;l.onerror=function(){o.method="png",o.href=r[2],e(r[2])},l.onload=function(){var t=1===l.width&&1===l.height,i=r[t&&d?0:t?1:2];t&&d?o.method="svg":t?o.method="datapng":o.method="png",o.href=i,n(e(i),a)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",c.documentElement.className+=" grunticon"}};o.loadCSS=e,o.onloadCSS=n,t.grunticon=o}(this),function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;d<t.length;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;d<n.length;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;d<r.length;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s}(grunticon,this)}();
+          grunticon(["gfx/icons.data.svg.css", "gfx/icons.data.png.css", "gfx/icons.fallback.css"], grunticon.svgLoadedCallback);
+      </script>
+     <noscript><link href="gfx/icons.fallback.css" rel="stylesheet"></noscript>
 </head>
+
 <body>
-    
+  <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+      <header class="masthead clear">
+          <div class="site-header centered">
+              <div class="site-branding">
+                <h1 class="site-title"><a href="/">My Space!</a></h1>
+          </div><!-- .site-title -->
+          <nav id="multi-level-nav" class="menu multi-level-nav">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li class="has-children">
+                      <a href="#">Your Stay<button class="dropdown-toggle" aria-expanded="false"><span class="screen-reader-text">Expand child menu</span></button></a>
+                      <ul class="sub-menu">
+                          <li><a href="#">Be Inspired</a></li>
+                           <li><a href="#">The Honest Company</a></li>
+                          <li><a href="#">Be Fun Be Silly</a></li>
+                      </ul>
+                  </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="reserve" href="#">My Space</a></li>
+            </ul>
+          </nav><!-- #multi-level-nav .multi-level-nav -->
+    </div><!-- .centered -->
+
+</header><!-- .masthead -->
+
+<div id="showcase" class="space-area">
+    <div class="front-slider flexslider">
+      <ul class="slides">
+                <li>
+                    <img src="images/mainpromo/welcome01-800.jpg" alt="" data-type="showcase" />
+                </li>
+                <li>
+                    <img src="images/testimonials/earth-800.jpg" alt="" data-type="showcase" />
+                </li>
+                <li>
+                    <img src="images/testimonials/zerog-800.jpg" alt="" data-type="showcase" />
+                </li>
+                <li>
+                    <img src="images/testimonials/bluepebble-800.jpg" alt="" data-type="showcase" />
+                </li>
+            </ul>
+          </div><!-- .flexslider -->
+    <div class="space-content">
+        <div class="Space-text">
+            <h2 class="Space-title">No Risk No Fun ?!?</h2>
+            <p class="space-lede">If it's in your mind, it worth taking the risk! Never, ever understimate the importance of having fun.</p>
+        </div><!-- .space-text -->
+    </div><!-- .Space-content -->
+</div><!-- #showcase .Space-area -->
+<div class="top-pitch centered">
+            <h2 class="main-title">Welcome to My Space</h2>
+            <p class="teaser two-column">
+                You can't control how other people receive your energy. Anything you do or say gets filtered through the lens of whatever they are going through at the moment, which has nothing to do with you. Just keep doing your thing with as much love and integrity as possible. Don't fall back into your old patterns of living just because they are more comfortable and easier to access. <strong>Remember</strong> you left certain habits and situation behind for a reason to improve live. And right now, you can't move forward if you keep going back.
+            </p>
+        </div><!-- .pitch centered -->
+
+        <section class="main-pitch">
+            <div class="three-reasons centered">
+                <figure class="reason">
+                    <a href="">
+                        <img src="images/testimonials/earth-800.jpg" alt="" data-type="reason" />
+                    </a>
+                    <figcaption>
+                        <h3 class="content-title">Be Inspired</h3>
+                        <p>It's not too late, you aren't behind, you are exactly where you need to be and every step is necessary. Don't judge or berate yourself for how long your journey is taking, we all need our own time to travel our own distance.  <strong>Give yourself creadit and be thankful you made it this far.</strong></p>
+                    </figcaption>
+                </figure><!-- .reason -->
+                <figure class="reason">
+                     <a href="">
+                        <img src="images/testimonials/footprint-800.jpg" alt="" data-type="reason" />
+                    </a>
+                    <figcaption>
+                        <h3 class="content-title">The Honest Company</h3>
+                        <p>Yes, you're on the moon, but that doesn't mean gravity won't do its work on your body. Enjoy the little things in life, for one day you'll look back and realize they were the big things.</p>
+                    </figcaption>
+                </figure><!-- .reason -->
+                <figure class="reason">
+                    <a href="">
+                        <img src="images/mainpromo/welcome-800.jpg" alt="" data-type="reason" />
+                    </a>
+                    <figcaption>
+                        <h3 class="content-title">Be Fun Be Silly</h3>
+                        <p>Hmmmm... good one! Travel the world, be you because life is too short to be anything but happy. And always know that the best way to cheer yourself up is to try to cheer sombody else up.</p>
+                    </figcaption>
+                </figure><!-- .reason -->
+            </div><!-- .three-reasons centered -->
+        </section><!-- .main-pitch -->
+
+        <div class="cta">
+            <a href="#">Click On My Space!</a>
+        </div><!-- .cta -->
+
+
 </body>
 </html>
