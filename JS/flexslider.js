@@ -4,10 +4,4 @@ $(window).load(function() {
         controlNav: false,
         directionNav: false
     });
-
-    $('.story-slider').flexslider({
-        animation: "slide",
-        controlNav: true,
-        directionNav: true
-    });
 });
