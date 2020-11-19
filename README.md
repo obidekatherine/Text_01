@@ -1,3 +1,5 @@
-### Hi there, I'm Katherine.
+### Hi there, I'm Katherine
 
-## This project is still in progress. This is my first project after learning HTML, CSS and javaScript.
+## I'm currently working on this project
+- I'm currently learning everything
+- I'm looking forward in meeting other developers and to contribute more to open source projects.
