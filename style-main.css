@@ -1009,6 +1009,28 @@ Front page styles
     color: #B51C35;
 }
 /*--------------------------------------------------------------
+view info
+--------------------------------------------------------------*/
+.view-info {
+	height: auto;
+	color: #FFFCED;
+}
+
+.hide {
+	height: 0;
+	overflow: hidden;
+}
+
+.view-info .content-title {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	font-size: 2em;
+}
+
+.view-info p {
+	text-align: left;
+}
+/*--------------------------------------------------------------
 Footer styles
 --------------------------------------------------------------*/
 
