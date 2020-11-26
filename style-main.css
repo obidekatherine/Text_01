@@ -860,7 +860,7 @@ Front page space area
     background: hsla(0, 0%, 100%, .75);
 }
 
-..space-lede {
+.space-lede {
     padding: 1em 1em;
     font-size: 1.4em;
     color: #FFFCED;
